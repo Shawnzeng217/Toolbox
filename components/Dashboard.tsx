@@ -12,7 +12,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
       <div className="grid grid-cols-2 gap-4">
         {/* Card 1: AI Translator */}
         <a 
-          href="https://translator-test-steel.vercel.app/"
+          href="https://hilton-ai-translator.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="group flex flex-col items-start justify-between gap-4 p-5 rounded-xl bg-hilton-off-white shadow-premium hover:scale-[1.02] transition-transform duration-200 active:scale-95 h-44 w-full text-left"
@@ -28,7 +28,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
 
         {/* Card 2: Snap & Eat */}
         <a 
-          href="https://snap-eat-kappa.vercel.app/"
+          href="https://snap-and-eat.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="group flex flex-col items-start justify-between gap-4 p-5 rounded-xl bg-hilton-off-white shadow-premium hover:scale-[1.02] transition-transform duration-200 active:scale-95 h-44 w-full text-left"
