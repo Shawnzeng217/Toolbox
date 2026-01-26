@@ -56,7 +56,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
             <span className="material-symbols-outlined" style={{ fontSize: '28px' }}>concierge</span>
           </div>
           <div>
-            <h3 className="text-hilton-blue text-base font-semibold leading-tight mb-1">Hilton Gust Companion</h3>
+            <h3 className="text-hilton-blue text-base font-semibold leading-tight mb-1">Hilton Guest Companion</h3>
             <p className="text-gray-500 text-xs font-medium">Your personal concierge</p>
           </div>
         </a>
