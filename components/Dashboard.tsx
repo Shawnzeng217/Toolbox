@@ -7,7 +7,7 @@ interface DashboardProps {
 
 const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
   return (
-    <div className="flex-1 overflow-y-auto no-scrollbar -mt-4 pt-8 pb-32 px-4 bg-background-light dark:bg-background-dark relative z-0 animate-fade-in-up">
+    <div className="flex-1 overflow-y-auto no-scrollbar -mt-4 pt-8 pb-8 px-4 bg-background-light dark:bg-background-dark relative z-0 animate-fade-in-up">
       {/* Grid Layout */}
       <div className="grid grid-cols-2 gap-4">
         {/* Card 1: AI Translator */}
@@ -53,11 +53,11 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
           style={{ animationDelay: '200ms' }}
         >
           <div className="flex items-center justify-center size-12 rounded-full bg-white text-black border border-gray-100 shadow-sm group-hover:bg-primary group-hover:text-white transition-colors">
-            <span className="material-symbols-outlined" style={{ fontSize: '28px' }}>concierge</span>
+            <span className="material-symbols-outlined" style={{ fontSize: '28px' }}>luggage</span>
           </div>
           <div>
-            <h3 className="text-hilton-blue text-base font-semibold leading-tight mb-1">Hilton Guest Companion</h3>
-            <p className="text-gray-500 text-xs font-medium">Your personal concierge</p>
+            <h3 className="text-hilton-blue text-base font-semibold leading-tight mb-1">Guest Companion</h3>
+            <p className="text-gray-500 text-xs font-medium">Digital instay journey</p>
           </div>
         </a>
 
@@ -78,23 +78,33 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
           </div>
         </a>
 
-        {/* Card 5: Digital Memory (Full Width) */}
-        <button
-          onClick={() => onNavigate('DIGITAL_MEMORY')}
-          className="group col-span-2 flex flex-row items-center justify-start gap-5 p-5 rounded-xl bg-hilton-off-white shadow-premium hover:scale-[1.01] transition-transform duration-200 active:scale-95 h-24 w-full text-left relative overflow-hidden animate-fadeInUp"
+        {/* Card 5: Placeholder 1 (Coming Soon) */}
+        <div
+          className="group flex flex-col items-start justify-between gap-4 p-5 rounded-xl bg-hilton-off-white/50 border border-dashed border-gray-300 shadow-none h-44 w-full text-left animate-fadeInUp"
           style={{ animationDelay: '400ms' }}
         >
-          {/* Background Decoration */}
-          <div className="absolute right-0 top-0 h-full w-1/3 bg-gradient-to-l from-white/50 to-transparent"></div>
+          <div className="flex items-center justify-center size-12 rounded-full bg-gray-100 text-gray-400">
+            <span className="material-symbols-outlined" style={{ fontSize: '28px' }}>more_horiz</span>
+          </div>
+          <div>
+            <h3 className="text-gray-400 text-base font-semibold leading-tight mb-1">Coming Soon</h3>
+            <p className="text-gray-400 text-xs font-medium">More tools arriving...</p>
+          </div>
+        </div>
 
-          <div className="flex items-center justify-center size-12 rounded-full bg-white text-black border border-gray-100 shadow-sm group-hover:bg-primary group-hover:text-white transition-colors shrink-0 z-10">
-            <span className="material-symbols-outlined" style={{ fontSize: '28px' }}>auto_awesome</span>
+        {/* Card 6: Placeholder 2 (Coming Soon) */}
+        <div
+          className="group flex flex-col items-start justify-between gap-4 p-5 rounded-xl bg-hilton-off-white/50 border border-dashed border-gray-300 shadow-none h-44 w-full text-left animate-fadeInUp"
+          style={{ animationDelay: '500ms' }}
+        >
+          <div className="flex items-center justify-center size-12 rounded-full bg-gray-100 text-gray-400">
+            <span className="material-symbols-outlined" style={{ fontSize: '28px' }}>add</span>
           </div>
-          <div className="z-10">
-            <h3 className="text-hilton-blue text-lg font-semibold leading-tight mb-1">Digital Memory</h3>
-            <p className="text-gray-500 text-xs font-medium">Capture your moments forever</p>
+          <div>
+            <h3 className="text-gray-400 text-base font-semibold leading-tight mb-1">Coming Soon</h3>
+            <p className="text-gray-400 text-xs font-medium">Exciting new features</p>
           </div>
-        </button>
+        </div>
       </div>
 
       {/* Promo Banner */}

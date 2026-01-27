@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
 import Dashboard from './components/Dashboard';
-import BottomNav from './components/BottomNav';
+
 import ImageEditor from './components/ImageEditor';
 import { ViewState } from './types';
 
@@ -47,7 +47,7 @@ const App: React.FC = () => {
         {currentView === 'DIGITAL_MEMORY' && <ImageEditor />}
       </div>
 
-      <BottomNav currentView={currentView} onNavigate={handleNavigate} />
+
     </div>
   );
 };
