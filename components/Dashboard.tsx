@@ -54,7 +54,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
 
         {/* Card 3: Hilton Guest Companion */}
         <a
-          href="https://hilton-companion.vercel.app/"
+          href="https://companion-revamp.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="group flex flex-col items-start justify-between gap-4 p-5 rounded-xl shadow-premium hover:scale-[1.02] transition-transform duration-200 active:scale-95 h-44 w-full text-left relative overflow-hidden animate-fadeInUp"
