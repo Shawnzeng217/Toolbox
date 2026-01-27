@@ -73,8 +73,8 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
             <span className="material-symbols-outlined" style={{ fontSize: '28px' }}>fitness_center</span>
           </div>
           <div>
-            <h3 className="text-hilton-blue text-base font-semibold leading-tight mb-1">AI Fitness Coach</h3>
-            <p className="text-gray-500 text-xs font-medium">Personalized workout</p>
+            <h3 className="text-hilton-blue text-base font-semibold leading-tight mb-1">Magic Mirror</h3>
+            <p className="text-gray-500 text-xs font-medium">Smart fitness coach</p>
           </div>
         </a>
 
@@ -84,7 +84,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
           style={{ animationDelay: '400ms' }}
         >
           <div className="flex items-center justify-center size-12 rounded-full bg-gray-100 text-gray-400">
-            <span className="material-symbols-outlined" style={{ fontSize: '28px' }}>more_horiz</span>
+            <span className="material-symbols-outlined" style={{ fontSize: '28px' }}>add</span>
           </div>
           <div>
             <h3 className="text-gray-400 text-base font-semibold leading-tight mb-1">Coming Soon</h3>
