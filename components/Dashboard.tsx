@@ -52,7 +52,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
           </div>
         </a>
 
-        {/* Card 3: Hilton Guest Companion */}
+        {/* Card 3: Digital Concierge */}
         <a
           href="https://companion-revamp.vercel.app/"
           target="_blank"
@@ -68,8 +68,8 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
             <span className="material-symbols-outlined" style={{ fontSize: '28px' }}>luggage</span>
           </div>
           <div className="relative z-10">
-            <h3 className="text-white text-lg font-semibold leading-tight mb-1">Guest Companion</h3>
-            <p className="text-white text-xs italic">Digital instay journey</p>
+            <h3 className="text-white text-lg font-semibold leading-tight mb-1">Digital Concierge</h3>
+            <p className="text-white text-xs italic">Digital in-stay journey</p>
           </div>
         </a>
 
