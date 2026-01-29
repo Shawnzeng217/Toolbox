@@ -5,7 +5,24 @@ interface DashboardProps {
   onNavigate: (view: ViewState) => void;
 }
 
+// Declare gtag on window
+declare global {
+  interface Window {
+    gtag?: (command: string, action: string, params?: { [key: string]: any }) => void;
+  }
+}
+
 const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
+  const handleCardClick = (cardName: string, url: string) => {
+    if (window.gtag) {
+      window.gtag('event', 'card_click', {
+        event_category: 'Dashboard',
+        event_label: cardName,
+        card_name: cardName,
+        card_url: url
+      });
+    }
+  };
   return (
     <div className="flex-1 overflow-y-auto no-scrollbar -mt-4 pt-8 pb-8 px-4 bg-background-light dark:bg-background-dark relative z-0 animate-fade-in-up">
       {/* Grid Layout */}
@@ -15,6 +32,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
           href="https://hilton-ai-translator.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => handleCardClick('AI Translator', 'https://hilton-ai-translator.vercel.app/')}
           className="group flex flex-col items-start justify-between gap-4 p-5 rounded-xl shadow-premium hover:scale-[1.02] transition-transform duration-200 active:scale-95 h-44 w-full text-left relative overflow-hidden animate-fadeInUp"
           style={{ animationDelay: '0ms' }}
         >
@@ -36,6 +54,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
           href="https://snap-and-eat.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => handleCardClick('Snap & Eat', 'https://snap-and-eat.vercel.app/')}
           className="group flex flex-col items-start justify-between gap-4 p-5 rounded-xl shadow-premium hover:scale-[1.02] transition-transform duration-200 active:scale-95 h-44 w-full text-left relative overflow-hidden animate-fadeInUp"
           style={{ animationDelay: '100ms' }}
         >
@@ -57,6 +76,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
           href="https://companion-revamp.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => handleCardClick('Digital Concierge', 'https://companion-revamp.vercel.app/')}
           className="group flex flex-col items-start justify-between gap-4 p-5 rounded-xl shadow-premium hover:scale-[1.02] transition-transform duration-200 active:scale-95 h-44 w-full text-left relative overflow-hidden animate-fadeInUp"
           style={{ animationDelay: '200ms' }}
         >
@@ -78,6 +98,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
           href="https://petershenfk.github.io/Smart-Fitness-Coach-New/"
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => handleCardClick('Magic Mirror', 'https://petershenfk.github.io/Smart-Fitness-Coach-New/')}
           className="group flex flex-col items-start justify-between gap-4 p-5 rounded-xl shadow-premium hover:scale-[1.02] transition-transform duration-200 active:scale-95 h-44 w-full text-left relative overflow-hidden animate-fadeInUp"
           style={{ animationDelay: '300ms' }}
         >
