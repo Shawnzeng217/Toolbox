@@ -14,6 +14,7 @@ declare global {
 
 const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
   const handleCardClick = (cardName: string, url: string) => {
+    console.log('Card clicked:', cardName); // Debug log
     if (window.gtag) {
       window.gtag('event', 'card_click', {
         event_category: 'Dashboard',
